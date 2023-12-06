@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" styleClass="primary-class" stylesheets="@styles/lightMode.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cocas.BvBGameController">
+   <children>
+      <GridPane layoutX="225.0" layoutY="224.0" prefHeight="550.0" prefWidth="550.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="boton1" fx:id="boton1" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton2" fx:id="boton2" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton3" fx:id="boton3" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton4" fx:id="boton4" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton5" fx:id="boton5" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton6" fx:id="boton6" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton7" fx:id="boton7" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton8" fx:id="boton8" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+            <Button id="boton9" fx:id="boton9" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="274.0" prefWidth="288.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Chilanka Regular" size="72.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Button id="reinicio" layoutX="534.0" layoutY="848.0" mnemonicParsing="false" onAction="#reinicio" prefHeight="56.0" prefWidth="114.0" text="Reinicio">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Text fx:id="resultado" layoutX="106.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="789.0">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Text>
+      <Text layoutX="-9.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bot1" textAlignment="CENTER" wrappingWidth="260.4453125">
+         <font>
+            <Font size="30.0" />
+         </font></Text>
+      <Text layoutX="855.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bot2" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font></Text>
+      <Button id="reinicio" layoutX="350.0" layoutY="848.0" mnemonicParsing="false" onAction="#bvb" prefHeight="56.0" prefWidth="114.0" text="Inicio">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER" layoutX="1.0" prefHeight="100.0" prefWidth="1000.0" styleClass="secondary-color">
+         <children>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="239.0" text="Modos de juego:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#PvP" prefHeight="59.0" prefWidth="102.0" text="PvP">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="100.0" prefWidth="50.0" />
+            <Button mnemonicParsing="false" onAction="#PvB" prefHeight="47.0" prefWidth="105.0" text="PvB">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
